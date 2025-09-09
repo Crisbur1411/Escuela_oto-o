@@ -83,14 +83,14 @@
 .brand-image {
   display: inline-block;
   padding: 10px 20px;
-  background-image: url("../assets/img/portfolio/conacyt.png"); /* Ruta de tu imagen */
+  background-image: url("../assets/img/portfolio/inaoe_conacyt.png"); /* Ruta de tu imagen */
   background-size: cover;   /* Ajusta la imagen al tamaño del botón */
   background-position: center;
   color: white;  
   border-radius: 8px;
   text-decoration: none;
-  height: 40px;
-  width: 170px; /* Ajusta el ancho según tus necesidades */
+  height: 60px;
+  width: 220px; /* Ajusta el ancho según tus necesidades */
 }
 
 *,
@@ -10912,19 +10912,19 @@ html {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #fff;
+  color: #000000;
 }
 #mainNav .navbar-nav {
   margin-top: 1rem;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link {
-  color: #fff;
+  color: #000000;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
   color: #1abc9c;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
-  color: #fff;
+  color: #000000;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
   color: #1abc9c;
@@ -10948,11 +10948,11 @@ html {
     margin-top: 0;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
-    color: #fff;
+    color: #000000;
     background: #1abc9c;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
-    color: #fff;
+    color: #000000;
     background: #1abc9c;
   }
   #mainNav.navbar-shrink {
@@ -10982,33 +10982,16 @@ html {
 }
 
 .masthead {
-  padding-top: calc(6rem + 74px);
-  padding-bottom: 6rem;
-}
-.masthead .masthead-heading {
-  font-size: 2.75rem;
-  line-height: 2.75rem;
-}
-.masthead .masthead-subheading {
-  font-size: 1.25rem;
-}
-.masthead .masthead-avatar {
-  width: 15rem;
+  width: 100%;
+  min-height: 100vh;
+  background-image: url("../assets/img/portfolio/banner.jpg");
+  background-size: contain;     /* la imagen completa */
+  background-position: center;  /* centrada */
+  background-repeat: no-repeat; /* que no se repita */
 }
 
-@media (min-width: 992px) {
-  .masthead {
-    padding-top: calc(6rem + 104px);
-    padding-bottom: 6rem;
-  }
-  .masthead .masthead-heading {
-    font-size: 4rem;
-    line-height: 3.5rem;
-  }
-  .masthead .masthead-subheading {
-    font-size: 1.5rem;
-  }
-}
+
+
 .portfolio .portfolio-item {
   cursor: pointer;
   position: relative;
@@ -11057,4 +11040,53 @@ html {
 
 .copyright {
   background-color: #1a252f;
+}
+
+
+
+
+
+#mainNav.bg-secondary {
+  background-color: #ffffff !important; /* blanco */
+}
+
+/* Cambiar el texto a negro solo dentro de la sección Convocatoria */
+.convocatoria p,
+.convocatoria strong {
+  color: #000 !important; /* negro */
+}
+
+
+/* Fondo de la sección */
+#about {
+  background-color: #fdfdfd; /* color de fondo claro */
+  color: #000 !important; /* texto negro */
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+
+/* Tabs */
+#programTabs .nav-link {
+  color: #000 !important;
+  background-color: #e9ecef !important; /* fondo de cada tab */
+  border: 1px solid #dee2e6;
+  margin-right: 2px;
+  transition: all 0.3s ease;
+}
+
+/* Tab activo */
+#programTabs .nav-link.active {
+  background-color: #1ABC9C !important; /* fondo del tab activo */
+  color: #000 !important;
+}
+
+/* Hover en tabs */
+#programTabs .nav-link:hover {
+  background-color: #1ABC9C !important; /* cambia el fondo al pasar el mouse */
+  color: #fff !important; /* opcional: cambia el texto a blanco al hover */
+}
+
+#about .page-section-heading {
+  color: #2c3e50;
 }
