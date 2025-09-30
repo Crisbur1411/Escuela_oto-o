@@ -79,19 +79,25 @@
   --bs-highlight-bg: #fff3cd;
 }
 
-
-.brand-image {
-  display: inline-block;
-  padding: 10px 20px;
-  background-image: url("../assets/img/portfolio/inaoe_conacyt.png"); /* Ruta de tu imagen */
-  background-size: cover;   /* Ajusta la imagen al tamaño del botón */
-  background-position: center;
-  color: white;  
-  border-radius: 8px;
-  text-decoration: none;
-  height: 60px;
-  width: 220px; /* Ajusta el ancho según tus necesidades */
+.logo-navbar {
+  height: 60px;     /* en escritorio */
+  width: auto;      /* mantiene proporción */
+  display: block;
+  max-width: 100%;  /* nunca se sale del contenedor */
 }
+
+@media (max-width: 768px) {   /* tablets y teléfonos */
+  .logo-navbar {
+    height: 40px;   /* más pequeño */
+  }
+}
+
+@media (max-width: 480px) {   /* celulares muy chicos */
+  .logo-navbar {
+    height: 35px;
+  }
+}
+
 
 *,
 *::before,
@@ -10984,7 +10990,7 @@ html {
 .masthead {
   width: 100%;
   min-height: 100vh;
-  background-image: url("../assets/img/portfolio/banner.jpg");
+  background-image: url("../assets/img/portfolio/banner.png");
   background-size: contain;     /* la imagen completa */
   background-position: center;  /* centrada */
   background-repeat: no-repeat; /* que no se repita */
@@ -11089,4 +11095,50 @@ html {
 
 #about .page-section-heading {
   color: #2c3e50;
+}
+
+
+/* Estilos para el programa */
+.program-list {
+    padding: 0;
+}
+
+.program-item {
+    display: flex;
+    gap: 20px; /* espacio entre columnas */
+    margin-bottom: 10px; /* espacio entre filas */
+    flex-wrap: wrap; /* para pantallas pequeñas */
+}
+
+.program-time {
+    flex: 0 0 120px; /* ancho fijo para la hora */
+    font-weight: bold;
+}
+
+.program-activity {
+    flex: 1; /* ocupa el espacio disponible */
+}
+
+.program-speaker {
+    flex: 0 0 200px; /* ancho fijo para ponente */
+    font-style: italic;
+}
+
+
+.program-item {
+    display: flex;
+    gap: 20px; /* espacio entre columnas */
+    margin-bottom: 10px; /* espacio entre filas */
+    flex-wrap: wrap; /* para pantallas pequeñas */
+    background-color: #d9eaff; /* azul claro */
+    padding: 10px 15px; /* espacio interno */
+    border-radius: 8px; /* bordes redondeados */
+}
+
+.program-item:nth-child(even) {
+    background-color: #d9eaff; /* azul claro */
+}
+
+.program-item:nth-child(odd) {
+    background-color: #ffffff; /* blanco */
 }
